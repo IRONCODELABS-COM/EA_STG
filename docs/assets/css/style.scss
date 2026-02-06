@@ -1,0 +1,178 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+.wrapper {
+  width: 1200px;
+}
+
+header {
+  width: 270px;
+}
+
+section {
+  width: 880px;
+}
+
+.tree-view {
+  list-style: none;
+  padding-left: 0;
+
+  ul {
+    list-style: none;
+    padding-left: 1.5em;
+    margin: 0.25em 0;
+  }
+
+  li {
+    position: relative;
+    padding: 0.4em 0 0.4em 1.8em;
+
+    &::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 400;
+      content: "\f15b";
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      color: #666;
+      font-size: 1em;
+    }
+  }
+
+  > li {
+    &::before {
+      font-weight: 900;
+      content: "\f07b";
+      color: #555;
+    }
+  }
+
+  strong {
+    color: #333;
+  }
+}
+
+.tree-view-collapsible {
+  list-style: none;
+  padding-left: 0;
+
+  details {
+    margin: 0.25em 0;
+
+    summary {
+      cursor: pointer;
+      position: relative;
+      padding: 0.4em 0 0.4em 1.8em;
+      list-style: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::marker {
+        display: none;
+      }
+
+      &::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f07b"; // closed folder
+        position: absolute;
+        left: 0;
+        top: 0.4em;
+        color: #555;
+        font-size: 1em;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        color: #0366d6;
+      }
+    }
+
+    &[open] > summary::before {
+      content: "\f07c"; // open folder
+      color: #e6a117;
+    }
+
+    > .tree-content {
+      padding-left: 1.5em;
+      margin: 0.25em 0;
+
+      li {
+        position: relative;
+        padding: 0.4em 0 0.4em 1.8em;
+        list-style: none;
+
+        &::before {
+          font-family: "Font Awesome 6 Free";
+          font-weight: 400;
+          content: "\f15b"; // file icon
+          position: absolute;
+          left: 0;
+          top: 0.4em;
+          color: #666;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  // Nested details (subfolders)
+  details details {
+    margin-left: 1.5em;
+  }
+
+  strong {
+    color: #333;
+  }
+}
+
+// GitHub-style callouts/alerts
+blockquote {
+  &.note, &.tip, &.warning, &.caution, &.important {
+    padding: 1em 1em 1em 1.2em;
+    margin: 1em 0;
+    border-radius: 6px;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.note {
+    border-left: 4px solid #bbb;
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  &.tip {
+    border-left: 4px solid #999;
+    background: #e8e8e8;
+    color: #333;
+  }
+
+  &.warning {
+    border-left: 4px solid #777;
+    background: #ddd;
+    color: #222;
+  }
+
+  &.caution {
+    border-left: 4px solid #555;
+    background: #ccc;
+    color: #111;
+  }
+
+  &.important {
+    border-left: 4px solid #333;
+    background: #bbb;
+    color: #000;
+  }
+}
