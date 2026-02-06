@@ -1,10 +1,9 @@
-# EA STAGING 
+# Iron Code Labs 
 
->[!TIP]
-Develop and test here untill satisified. 
-Also GH Jekil enabled
+## [From Legacy Lock-in to AI Velocity](https://ironcodelabs.com/)
 
-## Enterprise Architecture based Methodology
+- This is [Staging Site](https://ironcodelabs-com.github.io/EA_STG/)
+- [Published Site](https://ironcodelabs-com.github.io/EA)
 
 >[!NOTE]
 Unless otherwise declared &copy; by dbj@dbj.org  | CC BY SA 4.0 
