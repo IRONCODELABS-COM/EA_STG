@@ -4,13 +4,7 @@ title: Iron Code Labs Enterprise Architecture (ICLEA)
 description: Home
 ---
 
-## What is a Commercial Enterpise?
-
-- Business entity aligned to external and internal forces. Best describd with a diagram.
-   - [Commercial enterprise](pages/commercial_enterprise.md) in the global geo-political continuum.
-
-
-## 1. What is Enterprise Architecture?
+## Enterprise Architecture — The Governing Authority
 
 > &nbsp;
 >
@@ -21,62 +15,83 @@ description: Home
 > &nbsp;
 > ![](assets/icl_ea_clogs.png)
 >
-> [TOGAF](https://www.opengroup.org/togaf) is a global standard for management of Enterprise Architecture. Aim is very simple: to improve the business eficiency.
+> [TOGAF](https://www.opengroup.org/togaf) is a global standard for management of Enterprise Architecture. Aim is very simple: to improve the business efficiency.
 >
 > &nbsp;
 
-## 2. Iron Code Labs Enteprise Architecture (ICL EA)
-- **ICL EA is a subset of [TOGAF](https://www.opengroup.org/togaf)**
-   - It is taylored, by our EA navigator, for your smooth sailing
-   - Guding principle: Aligned with the aim of performing small but measurable steps delivering visible benefits
+ICL EA is a TOGAF subset tailored for guided, measurable delivery. EA is not one topic among many — it is the **governing principle** across every stage of the methodology. EA is present, and governing, from day one.
 
-## 3. Capbility Maturity Model (CMM)
+Your enterprise exists within a wider context of forces and obligations. See [Commercial Enterprise](pages/commercial_enterprise.md) for where the enterprise sits in the global geo-economic continuum.
 
-Why Climbing the CMM Ladder
+---
 
-CMM is a formal foundation for managing and measuring organisation capability and maturity. It is based on TOGAF CMM. For details please [proceed here](pages/cmm.md).
+## The Three Stages
 
-ICL EA has developed a simplified CMM adoption Method. It is simplified because it is aligned to the core idea of fast but feasible delivery under the guidance of EA.
+Everything below operates under EA governance. The stages describe your journey from initial assessment to continuous operational delivery.
 
-Existence of **Taxonomy** and its widepsread usage is a sign of organization higher on the CMM ladder. [Taxonomy](pages/taxonomy/index.md) provides the structural foundation that characterizes a capable and mature enterprise.
+### Stage 1 — Preparing for the CMM Ladder
+{: .stage}
 
-## 4. How is Feasible Delivery achieved?
+*EA governs: assessment and baseline*
 
+EA leads the assessment of your current organisational maturity. Where are you on M0–M5?
 
-### Decoupling Business and Technology
-- Business declares products
-- Technology implements products
-- EA guides the organization and manages the whole process
+- EA introduces shared vocabulary via [Taxonomy](pages/taxonomy/index.md)
+- EA identifies capability gaps using the ACMM scorecard
+- EA sets a realistic target (typically M2)
 
-### Evolving Products feasibly 
+**Deliverable:** CMM baseline assessment + EA-guided improvement roadmap
 
-NOTE: Product by its widest possible definition.  Although in the context of ICL EA, primary focus is on software systems, products and services.
+For full detail on the maturity model see [CMM](pages/cmm.md).
 
-- Each step is a measure of AE efficiency
+### Stage 2 — Climbing to CMM Level 2
+{: .stage}
 
-1. Require
-2. Develop
-3. Deploy
-4. Evaluate
-5. Repeat
+*EA governs: process definition and governance*
 
-### By following the ICL BPT Methodology. 
-Core of the BPT Methodology is [BPT Meta Loop](pages/bpt.md).
+EA defines and documents architecture processes — moving the organisation from ad-hoc to repeatable.
 
-#### Key actors in the BPT Metodology
-- **Business** declares products
-- **Product** bridges business needs and technical capabilities
-- **Technology** implements products
-- **EA** guides the organization and manages the whole process
+- EA establishes governance structures and secures senior management involvement
+- EA introduces architecture communication practices across the organisation
+- EA builds the [Taxonomy](pages/taxonomy/index.md) as a living organisational asset
 
-[BPT Meta Loop](pages/bpt.md) is the agile method for guiding the overall enterprise process: from Architecture to Product delivery, guided by our simplified TOGAF approach.
+**Deliverable:** organisation operating at M2 with EA-documented processes
 
-## 5. [AI is inside](pages/AI.md)
+For full detail see [CMM](pages/cmm.md).
 
-- Our guding principle is to understand why and how we and our customers use AI. 
-- We are not used by AI. 
-- If things go wrong we do not blame it on AI. 
-- AI is marketing term. LLM is enginering. 
+### Stage 3 — The BPT Infinity Loop
+{: .stage}
+
+*EA governs: continuous operational cycle*
+
+This is the operational methodology for CMM-ready organisations. EA is the **meta-layer** — it does not participate in the loop, it governs it.
+
+| Activity | What happens | Key actors |
+|----------|-------------|------------|
+| **Require** | Business declares product needs; EA ensures alignment with strategy | Business, EA |
+| **Develop** | Technology builds to product specifications; EA governs coherence | Technology, Product, EA |
+| **Deploy** | Product is released into operations; EA validates architecture compliance | Technology, Product, EA |
+| **Evaluate** | Measure outcomes against business objectives; feed back into next cycle | Business, Product, EA |
+
+Evaluate feeds back to Require — the loop never stops.
+
+**Actor roles:**
+
+- **Business** — declares products, owns outcomes
+- **Product** — bridges business needs and technical capabilities (the alignment point)
+- **Technology** — implements products
+- **EA** — governs the meta-layer, guides all transitions without bottlenecking
+
+See [BPT Meta Loop](pages/bpt.md) for the diagram and full conceptual description.
+
+---
+
+## [AI is inside](pages/AI.md)
+
+- Our guiding principle is to understand why and how we and our customers use AI.
+- We are not used by AI.
+- If things go wrong we do not blame it on AI.
+- AI is marketing term. LLM is engineering.
 - We do not blame it on the tool.
 
 ---
